@@ -192,14 +192,15 @@
   <h1>Endless World: Real-Time 3D-Aware Long Video Generation</h1>
 
   <div class="authors">
-   Ke Zhang, Yiqun Mei, Jiacong Xu, Vishal M. Patel
+   Ke Zhang, Xiangchen Zhao, Yunjie Tian, Jiayu Zheng, Vishal M. Patel, Di Fu
   </div>
   <div class="affiliation">
     Johns Hopkins University
+    ByteDance Inc.
   </div>
 
   <div class="links">
-    <a href="https://arxiv.org/abs/2512.12430" target="_blank">📄 Paper (arXiv)</a>
+    <a href="#" target="_blank">📄 Paper (arXiv)</a>
     <a href="#" onclick="alert('Code coming soon!')" style="background-color: #999999;">💻 Code (Coming Soon)</a>
     <a href="#" onclick="alert('Model coming soon!')" style="background-color: #999999;">🧠 Model (Coming Soon)</a>
     <a href="#" onclick="alert('Dataset coming soon!')" style="background-color: #999999;">📁 Dataset (Coming Soon)</a>
@@ -214,7 +215,7 @@
 <h2>Method illustration</h2>
   <div style="text-align: center; overflow-x: auto;">
     <img 
-      src="figures/pipeline.png" 
+      src="teaser-prompt.jpg" 
       alt="Method Pipeline Diagram" 
       class="pipeline-img" 
       style="max-width: 100%; height: auto; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
@@ -238,23 +239,7 @@ Conventional video classification models, acting as effective imitators, excel i
     >
   </div>
   <p style="margin-top: 20px; font-size: 1.05rem; line-height: 1.7; color: #333;">
-    <strong>Endless World</strong> features two core modules, 3D fusion and conditional auto-regressive video generation, which together enable the creation of 3D-consistent videos of unlimited length with stable and realistic visual quality.</p>
-</div>
-
-<!-- BibTeX Citation -->
-<div class="section-box">
-  <h2>BibTeX Citation</h2>
-  <div class="bibtex-box">
-@misc{zhang2025endlessworldrealtime3daware,
-      title={Endless World: Real-Time 3D-Aware Long Video Generation}, 
-      author={Ke Zhang and Yiqun Mei and Jiacong Xu and Vishal M. Patel},
-      year={2025},
-      eprint={2512.12430},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2512.12430}, 
-}
-  </div>
+    <strong>Close-instance vs. open-instance video classification.</strong> (a) Close-instance benchmarks have relatively homogeneous intra-class distributions. (b) Open-instance settings exhibit broader, open-ended intra-class variation that better reflects real-world data. (c) Consequently, conventional video encoders fit close-instance data well but struggle to generalize, whereas VLMs with stronger semantic priors are more robust in the open-instance regime.</p>
 </div>
 
 </body>
