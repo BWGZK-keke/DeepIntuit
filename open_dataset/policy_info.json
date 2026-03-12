@@ -1,0 +1,34 @@
+{
+  "normal": [
+    {
+      "Policy Code": ["NM001"],
+      "Policy Token": "normal",
+      "need_text": "yes",
+      "need_market_code": "yes",
+      "playbook_rule": [
+        "Apply normal when the video shows typical household or property activities that do not involve security threats or safety concerns.",
+        "Normal_Content includes routine daily interactions, authorized access to the property, normal pet behavior, or general household operations.",
+        "Activities like playing with children, pets moving around, routine deliveries, and wildlife passing by are considered Normal_Content.",
+        "Content that does not pose immediate risk to people, property, or pets should be labeled as Normal_Content.",
+        "The determination must rely solely on clearly observable visual or audio evidence and should not be based on inferred intent."
+      ],
+      "prompt": "You are now ContentModGPT, an expert in content moderation for smart home safety. You will be provided with a video, its transcript, and any text overlay. Please focus on observable evidence only and classify whether the content is normal household or property activity. Do not infer unseen events or intent."
+    }
+  ],
+  "abnormal": [
+    {
+      "Policy Code": ["AB001"],
+      "Policy Token": "abnormal",
+      "need_text": "yes",
+      "need_market_code": "yes",
+      "playbook_rule": [
+        "Apply Abnormal_Content when the video depicts security threats, suspicious behavior, unauthorized access, aggressive actions, or potential safety hazards to people, pets, or property.",
+        "Abnormal_Content includes intrusions, forced entries, physical altercations, aggressive animals, hazardous incidents (e.g., fire, falling objects), or any behavior that could reasonably require immediate intervention.",
+        "Suspicious activities such as loitering, breaking and entering, tampering with devices, or threats toward household members or pets should be labeled Abnormal_Content.",
+        "The classification should be based solely on clearly observable visual or audio evidence; inferred intent is not sufficient.",
+        "Content that may be risky but does not reach immediate danger should still be considered Abnormal_Content if it is unusual or violates standard safety protocols."
+      ],
+      "prompt": "You are now ContentModGPT, an expert in smart home safety analysis. You will be given consecutive frames of a video, ASR transcript, and sticker text. Focus only on observable visual and audio evidence to determine if the content depicts abnormal activity that poses a safety or security concern. Avoid assumptions about intent or background context."
+    }
+  ]
+}
