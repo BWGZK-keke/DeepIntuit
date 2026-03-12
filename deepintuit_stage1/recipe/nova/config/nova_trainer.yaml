@@ -1,0 +1,17 @@
+# the config will override default ppo_trainer.yaml
+
+hydra:
+  searchpath:
+    - file://verl/trainer/config
+
+defaults:
+  - ppo_trainer
+  - _self_
+
+custom_reward_function:
+  path: recipe/nova/reward_score.py
+  name: violation_compute_score
+
+actor_rollout_ref:  
+  model:  
+    external_lib: recipe.nova.model.modeling_nova
